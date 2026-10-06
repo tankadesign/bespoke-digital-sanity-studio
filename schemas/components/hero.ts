@@ -1,11 +1,11 @@
-import { defineField, defineType } from 'sanity'
-import { makeCloudinaryThumb } from "../../lib/util"
-import { RocketIcon } from '@sanity/icons'
-import React from 'react'
+import { defineField, defineType } from 'sanity';
+import { makeCloudinaryThumb } from '../../lib/util';
+import { RocketIcon } from '@sanity/icons/Rocket';
+import React from 'react';
 
 interface FieldParams {
-  parent: any
-  value: any
+  parent: any;
+  value: any;
 }
 
 // schemas/project.ts
@@ -25,8 +25,8 @@ export default defineType({
       return {
         title,
         subtitle: subtitle ? `${subtitle} | ${kind}` : kind,
-        media: React.createElement('img', { src: makeCloudinaryThumb(imageUrl) })
-      }
+        media: React.createElement('img', { src: makeCloudinaryThumb(imageUrl) }),
+      };
     },
   },
   fields: [
@@ -90,4 +90,4 @@ export default defineType({
       to: [{ type: 'project' }],
     },
   ],
-})
+});

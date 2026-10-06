@@ -1,5 +1,5 @@
-import { BlockElementIcon } from '@sanity/icons'
-import { defineField, defineType } from 'sanity'
+import { BlockElementIcon } from '@sanity/icons/BlockElement';
+import { defineField, defineType } from 'sanity';
 
 export default defineType({
   name: 'logo_grid',
@@ -10,7 +10,7 @@ export default defineType({
     select: {
       title: 'name',
       subtitle: 'title',
-    }
+    },
   },
   fields: [
     defineField({
@@ -30,7 +30,7 @@ export default defineType({
       description: '3 column layout of logos',
       options: {
         accept: 'image/svg+xml',
-      }
+      },
     }),
     defineField({
       name: 'desktop',
@@ -39,7 +39,7 @@ export default defineType({
       description: '6 column layout of logos',
       options: {
         accept: 'image/svg+xml',
-      }
+      },
     }),
     defineField({
       name: 'color',
@@ -61,14 +61,14 @@ export default defineType({
       type: 'number',
       title: 'Max Width for desktop',
       description: 'Max width of the logo grid on desktop',
-      validation: Rule => Rule.positive().integer().min(720).max(9999999),
+      validation: (Rule) => Rule.positive().integer().min(720).max(9999999),
     }),
     defineField({
       name: 'mobile_max_width',
       type: 'number',
       title: 'Max Width for mobile',
       description: 'Max width of the logo grid on desktop',
-      validation: Rule => Rule.positive().integer().min(320).max(720),
+      validation: (Rule) => Rule.positive().integer().min(320).max(720),
     }),
-  ]
-})
+  ],
+});

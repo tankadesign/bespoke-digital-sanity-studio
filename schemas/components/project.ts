@@ -1,4 +1,4 @@
-import { PresentationIcon } from '@sanity/icons';
+import { PresentationIcon } from '@sanity/icons/Presentation';
 import React from 'react';
 import { defineArrayMember, defineField, defineType } from 'sanity';
 import { schemeFilter } from 'sanity-plugin-taxonomy-manager';
@@ -75,7 +75,7 @@ export default defineType({
           type: 'reference',
           to: { type: 'skosConcept' },
           options: {
-            filter: () => schemeFilter({ schemeId: '36f4b9' }),
+            filter: schemeFilter({ schemeId: '36f4b9' }),
             disableNew: true,
           },
         }),

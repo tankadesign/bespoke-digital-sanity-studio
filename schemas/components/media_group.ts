@@ -1,4 +1,4 @@
-import { ThLargeIcon } from '@sanity/icons';
+import { ThLargeIcon } from '@sanity/icons/ThLarge';
 import React from 'react';
 import { defineArrayMember, defineField, defineType } from 'sanity';
 import { makeCloudinaryThumb } from '../../lib/util';

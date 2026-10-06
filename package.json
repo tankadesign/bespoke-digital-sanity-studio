@@ -15,26 +15,26 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/color-input": "^6.0.4",
-    "@sanity/icons": "^3.7.4",
-    "@sanity/ui": "^3.1.13",
-    "@sanity/vision": "^5.31.1",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "sanity": "^5.31.1",
-    "sanity-plugin-cloudinary": "^1.4.1",
+    "@sanity/color-input": "^6.1.5",
+    "@sanity/icons": "^5.2.3",
+    "@sanity/ui": "^4.3.0",
+    "@sanity/vision": "^6.17.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sanity": "^6.17.0",
+    "sanity-plugin-cloudinary": "^2.1.5",
     "sanity-plugin-simpler-color-input": "^4.0.0",
-    "sanity-plugin-taxonomy-manager": "^4.7.1",
-    "styled-components": "^6.3.11"
+    "sanity-plugin-taxonomy-manager": "^6.0.0",
+    "styled-components": "^6.5.3"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^6.0.0",
+    "@sanity/eslint-config-studio": "^7.0.0",
     "@sanity/themer": "^0.10.0",
-    "@types/react": "^19.2.14",
-    "eslint": "^9.39.3",
-    "prettier": "^3.8.1",
+    "@types/react": "^19.3.0",
+    "eslint": "^10.12.0",
+    "prettier": "^3.9.9",
     "timezones-list": "^3.1.0",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.3"
   },
   "prettier": {
     "semi": true,

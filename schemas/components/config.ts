@@ -1,4 +1,5 @@
-import { CogIcon, EarthGlobeIcon } from '@sanity/icons';
+import { CogIcon } from '@sanity/icons/Cog';
+import { EarthGlobeIcon } from '@sanity/icons/EarthGlobe';
 import React from 'react';
 import { defineArrayMember, defineField, defineType } from 'sanity';
 import timezones, { TimeZone } from 'timezones-list';

@@ -1,5 +1,5 @@
-import { EnvelopeIcon } from '@sanity/icons'
-import { defineArrayMember, defineField, defineType } from 'sanity'
+import { EnvelopeIcon } from '@sanity/icons/Envelope';
+import { defineArrayMember, defineField, defineType } from 'sanity';
 
 export default defineType({
   name: 'form',
@@ -10,7 +10,7 @@ export default defineType({
     select: {
       title: 'name',
       subtitle: 'title',
-    }
+    },
   },
   fields: [
     defineField({
@@ -40,9 +40,9 @@ export default defineType({
           },
           lists: [
             { title: 'Bullet', value: 'bullet' },
-            { title: 'Numbered', value: 'number' }
-          ] // yes please, both bullet and numbered
-        })
+            { title: 'Numbered', value: 'number' },
+          ], // yes please, both bullet and numbered
+        }),
       ],
     }),
     defineField({
@@ -50,7 +50,7 @@ export default defineType({
       type: 'string',
       title: 'Form',
       initialValue: 'contact',
-      validation: Rule => Rule.required(),
+      validation: (Rule) => Rule.required(),
       options: {
         list: [
           { title: 'General Contact', value: 'contact' },
@@ -73,7 +73,7 @@ export default defineType({
         ],
         layout: 'radio',
         direction: 'horizontal',
-      }
+      },
     }),
-  ]
-})
+  ],
+});

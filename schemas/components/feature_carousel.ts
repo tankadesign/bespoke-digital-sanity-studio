@@ -1,4 +1,4 @@
-import { TiersIcon } from '@sanity/icons';
+import { TiersIcon } from '@sanity/icons/Tiers';
 import React from 'react';
 import { defineArrayMember, defineField, defineType } from 'sanity';
 import { makeCloudinaryThumb } from '../../lib/util';

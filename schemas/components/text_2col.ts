@@ -1,4 +1,4 @@
-import { InlineIcon } from '@sanity/icons';
+import { InlineIcon } from '@sanity/icons/Inline';
 import { defineArrayMember, defineField, defineType } from 'sanity';
 import { ParagraphLarge, PreHeader } from '../../tools/Components';
 

@@ -1,5 +1,5 @@
-import {UsersIcon} from '@sanity/icons'
-import {defineArrayMember, defineField, defineType} from 'sanity'
+import { UsersIcon } from '@sanity/icons/Users';
+import { defineArrayMember, defineField, defineType } from 'sanity';
 
 export default defineType({
   name: 'team_grid',
@@ -31,17 +31,17 @@ export default defineType({
         defineArrayMember({
           type: 'block',
           styles: [
-            {title: 'Heading 2', value: 'h2'},
-            {title: 'Heading 3', value: 'h3'},
-            {title: 'Heading 4', value: 'h4'},
-            {title: 'Normal', value: 'normal'},
+            { title: 'Heading 2', value: 'h2' },
+            { title: 'Heading 3', value: 'h3' },
+            { title: 'Heading 4', value: 'h4' },
+            { title: 'Normal', value: 'normal' },
           ],
           lists: [],
           marks: {
             decorators: [
-              {title: 'Strong', value: 'strong'},
-              {title: 'Emphasis', value: 'em'},
-              {title: 'Code', value: 'code'},
+              { title: 'Strong', value: 'strong' },
+              { title: 'Emphasis', value: 'em' },
+              { title: 'Code', value: 'code' },
             ],
           },
         }),
@@ -54,9 +54,9 @@ export default defineType({
       initialValue: 'transparent',
       options: {
         list: [
-          {title: 'Transparent', value: 'transparent'},
-          {title: 'Dark', value: 'dark'},
-          {title: 'Darker', value: 'darker'},
+          { title: 'Transparent', value: 'transparent' },
+          { title: 'Dark', value: 'dark' },
+          { title: 'Darker', value: 'darker' },
         ],
         layout: 'radio',
         direction: 'horizontal',
@@ -134,4 +134,4 @@ export default defineType({
       ],
     }),
   ],
-})
+});

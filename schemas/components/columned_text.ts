@@ -1,4 +1,4 @@
-import { SplitVerticalIcon } from '@sanity/icons';
+import { SplitVerticalIcon } from '@sanity/icons/SplitVertical';
 import { defineArrayMember, defineField, defineType } from 'sanity';
 
 export default defineType({

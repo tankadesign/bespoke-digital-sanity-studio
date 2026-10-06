@@ -1,5 +1,5 @@
-import { defineField, defineType } from 'sanity'
-import { TiersIcon } from '@sanity/icons'
+import { defineField, defineType } from 'sanity';
+import { TiersIcon } from '@sanity/icons/Tiers';
 
 // schemas/project.ts
 export default defineType({
@@ -11,7 +11,7 @@ export default defineType({
     select: {
       title: 'name',
       subtitle: 'title',
-    }
+    },
   },
   fields: [
     defineField({
@@ -39,8 +39,9 @@ export default defineType({
       name: 'override_title',
       type: 'boolean',
       title: 'Override title and subtitle',
-      description: 'When enabled the title and subtitle from this module will be used instead of what is in each of the Hero sections.',
+      description:
+        'When enabled the title and subtitle from this module will be used instead of what is in each of the Hero sections.',
       initialValue: true,
     }),
   ],
-})
+});

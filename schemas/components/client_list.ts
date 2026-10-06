@@ -1,5 +1,5 @@
-import { UsersIcon } from '@sanity/icons'
-import { defineField, defineType } from 'sanity'
+import { UsersIcon } from '@sanity/icons/Users';
+import { defineField, defineType } from 'sanity';
 
 export default defineType({
   name: 'client_list',
@@ -10,7 +10,7 @@ export default defineType({
     select: {
       title: 'name',
       subtitle: 'title',
-    }
+    },
   },
   fields: [
     defineField({
@@ -42,7 +42,7 @@ export default defineType({
         ],
         layout: 'radio',
         direction: 'horizontal',
-      }
+      },
     }),
-  ]
-})
+  ],
+});

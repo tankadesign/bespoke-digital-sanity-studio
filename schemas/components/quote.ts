@@ -1,5 +1,5 @@
-import {CommentIcon} from '@sanity/icons'
-import {defineField, defineType} from 'sanity'
+import { CommentIcon } from '@sanity/icons/Comment';
+import { defineField, defineType } from 'sanity';
 
 export default defineType({
   name: 'quote',
@@ -11,11 +11,11 @@ export default defineType({
       title: 'name',
       subtitle: 'quote',
     },
-    prepare({title, subtitle}: any) {
+    prepare({ title, subtitle }: any) {
       return {
         title,
         subtitle,
-      }
+      };
     },
   },
   fields: [
@@ -48,12 +48,12 @@ export default defineType({
       initialValue: 'white',
       options: {
         list: [
-          {title: 'White', value: 'white'},
-          {title: 'Green', value: 'green'},
+          { title: 'White', value: 'white' },
+          { title: 'Green', value: 'green' },
         ],
         layout: 'radio',
         direction: 'horizontal',
       },
     }),
   ],
-})
+});
