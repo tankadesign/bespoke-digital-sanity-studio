@@ -1,6 +1,6 @@
 import { visionTool } from '@sanity/vision';
 import { defineConfig, isDev } from 'sanity';
-import { buildThemeFromUrl } from '@sanity/themer-legacy';
+import { buildTheme } from '@sanity/themer';
 import { cloudinarySchemaPlugin } from 'sanity-plugin-cloudinary';
 import { simplerColorInput } from 'sanity-plugin-simpler-color-input';
 import { taxonomyManager } from 'sanity-plugin-taxonomy-manager';
@@ -8,9 +8,16 @@ import { structureTool } from 'sanity/structure';
 import { schemaTypes } from './schemas';
 import { BespokeLogo } from './ui/BespokeLogo';
 
-const theme = buildThemeFromUrl(
-  'https://themer.sanity.build/api/hues?default=60929e&primary=d8172e&transparent=60929e&positive=43d675;300&caution=fbd024;200&lightest=fcfdfd&darkest=0d1415',
-);
+const theme = buildTheme({
+  dark: {
+    accent: '#1d68b9',
+    background: '#242424',
+  },
+  light: {
+    accent: '#0b2745',
+    background: '#ffffff',
+  },
+});
 
 console.log('sanity studio', { isDev });
 
